@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Movie Diary-Home</title>
+
+    <script>
+
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+              }
+            }
+          }
+        }
+      </script>
+      <script defer src="main.js"></script>
+</head>
+
+<body>
+<!-- Start Felipes Part (Nav Bar) -->
+    <header>
+    </script>
+    <style>
+      .main-nav-link:link,
+      .main-nav-link:visited {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+      .main-nav-link:hover,
+      .main-nav-link:active {
+        color: #fedf39;
+      }
+
+      .hover-group:hover .main-nav-link {
+      color: #fedf39;
+    }
+    </style>
+  </head>
+
+
+  <body>
+    <!-- Start Felipes Part (Nav Bar) -->
+    <header class="relative z-10">
+      <div
+        class="flex justify-between items-center h-[6.8rem] px-[4.8rem] bg-[hsl(213,82%,2%)]"
+      >
+        <div class="flex-1 flex justify-center">
+          <a href="index.html" class="flex justify-center items-center">
+            <span
+              class="inline-block text-[24px] text-white text-whit border px-4 py-2"
+              >The Movie Club</span
+            >
+          </a>
+        </div>
+        <nav class="flex-1 flex justify-center bg-transparent">
+          <ul class="list-none flex items-center gap-[3.2rem]">
+            <li>
+              <a
+                class="inline-block no-underline font-medium border-b-2 border-red-500 transition-all duration-300 main-nav-link text-white main-nav-link"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block no-underline font-medium transition-all duration-300 main-nav-link text-white main-nav-link"
+                href="journal.html"
+                >JOURNAL</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex-1 flex justify-center items-center text-white">
+          <a
+            class="flex gap-3 justify-center items-center main-nav-link"
+            href="journal.html"
+            ><span>My Favorite Movies</span>
+            <ion-icon
+              class="main-nav-link cursor-pointer text-[24px]"
+              name="heart-outline"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="relative">
+      <div class="w-full h-[70vh] overflow-hidden">
+        <img src="img/hero.jpg" class="w-full object-cover" alt="Hero Image" />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/50 to-black/50 flex flex-col items-center justify-center text-center text-white"
+      >
+        <div class="space-y-4 mt-40">
+          <h1 class="text-4xl">Unlimited movies, TV shows, and more</h1>
+          <span class="text-2xl">Watch anywhere. Cancel anytime</span>
+          <p class="text-lg">
+            Ready to watch? Look for your favorite movie completely free.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Felipes Part (Nav Bar) -->
+
+    <main>
+      <!-- Start Felipes Part (Hero Section) -->
+
+      <!-- End Felipes Part(Hero Section) -->
+
+      <!-- Start Sebastian Part (Search Bar) -->
+      <section class="flex justify-center items-center pt-4">
+        <div class="w-[750px] h-auto rounded-sm">
+          <div class="bg-black text-white flex justify-center items-center gap-8 p-3 rounded-lg">
+            <div class="flex gap-3">
+              <input data-search type="text" placeholder="Search your Movie" class="px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 hide-placeholder text-black">
+              <button class="px-4 py-2 bg-[#FEDF39] text-black hover:bg-[#C6AD28] transition-all duration-300">Search</button>
+            </div>
+
+            <div>
+              <p class="font-semibold text-center pb-2">Filter by Genre:</p>
+              <div class="flex justify-center items-center gap-4">
+                <div class="flex flex-col items-center group">
+                  <img id="drama" src="img/drama-svgrepo-com (1).svg" alt="" class="w-8 hover:scale-110">
+                  <p class="text-sm text-center pt-1 group-hover:text-yellow-500">Drama</p>
+                </div>
+                <div class="flex flex-col items-center group">
+                  <img id="sciFi" src="img/alien-svgrepo-com (1).svg" alt="" class="w-8 hover:scale-110">
+                  <p class="text-sm text-center pt-1 group-hover:text-yellow-500">Sci-fi</p>
+                </div>
+                <div class="flex flex-col items-center group">
+                  <img id="comedy" src="img/laugh-beam-svgrepo-com (1).svg" alt="" class="w-8 hover:scale-110">
+                  <p class="text-sm text-center pt-1 group-hover:text-yellow-500">Comedy</p>
+                </div>
+                <div class="flex flex-col items-center group">
+                  <img id="action" src="img/gun-svgrepo-com (1).svg" alt="" class="w-8 hover:scale-110">
+                  <p class="text-sm text-center pt-1 group-hover:text-yellow-500">Action</p>
+                </div>
+                <div class="flex flex-col items-center pl-2 group">
+                  <img id="reset" src="img/reset-svgrepo-com (1).svg" alt="" class="w-8 hover:scale-110 ">
+                  <p class="text-sm text-center pt-1 group-hover:text-yellow-500">Reset</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Sebastian Part (Search Bar) -->
+
+
+<!-- Start Amarbayar Part (Movie Cards) -->
+      <div class="mx-auto container my-4">
+        <div id="movie-list" class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+<!-- Javascript results-->
+        </div>
+      </div>
+<!-- End Amarbayar Part (Movie Cards) -->
+
+      <!-- Start Amarbayar Part (Movie Cards) -->
+
+      <!-- End Amarbayar Part (Movie Cards) -->
+
+    </main>
+
+    <!-- Start Sebastian Part (Footer) -->
+    <footer class="bg-black p-4 text-white">
+      <div class="flex flex-col items-center gap-2">
+        <a href="index.html" class="flex justify-center items-center"><span
+            class="inline-block text-[24px] text-white text-whit border px-4 py-2"
+            >The Movie Club</span></a>
+        <p>© 2024 The Movie club</p>
+      </div>
+          <div class="flex flex-col items-center">
+            <p>Webpage by:
+              <div class="flex justify-center gap-6">
+                <a href="https://github.com/AmarbayarBold" target="_blank" class="font-semibold main-nav-link hover:scale-110">Amarbayar Bold</a>
+                <a href="https://github.com/felborja" target="_blank" class="font-semibold main-nav-link hover:scale-110">Felipe Borja</a>
+                <a href="https://github.com/SebSchoeneberger" target="_blank" class="font-semibold hover:scale-110 main-nav-link">Sebastian Schoeneberger</a>
+              </div>
+            </p>
+          </div>
+    </footer>
+    <!-- Start Sebastian Part (Footer) -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

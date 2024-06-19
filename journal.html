@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="journal.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Movie Diary-Journal</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+    <style>
+      .hide-placeholder::placeholder {
+        opacity: 1;
+      }
+
+      .hide-placeholder:focus::placeholder {
+        opacity: 0;
+      }
+
+      .main-nav-link:link,
+      .main-nav-link:visited {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+      .main-nav-link:hover,
+      .main-nav-link:active {
+        color: #fedf39;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start Felipes Part (Nav Bar) -->
+    <header class="relative z-10">
+      <div
+        class="flex items-center h-[6.8rem] px-[4.8rem] bg-[hsl(213,82%,2%)]"
+      >
+        <div class="flex-1 flex justify-center">
+          <a href="index.html" class="flex justify-center items-center">
+            <img class="h-[2.2rem]" src="/Multi-module app/logo.webp" alt="" />
+            <span class="inline-block text-[24px] text-white border px-4 py-2">
+              The Movie Club
+            </span>
+          </a>
+        </div>
+        <nav class="flex-1 flex justify-center bg-transparent">
+          <ul class="list-none flex items-center gap-[3.2rem]">
+            <li>
+              <a
+                class="inline-block no-underline font-medium transition-all duration-300 main-nav-link text-white"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block no-underline border-b-2 border-red-500 font-medium transition-all duration-300 main-nav-link text-white"
+                href="journal.html"
+                >JOURNAL</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex-1 flex justify-center items-center text-black">
+          <div class="flex gap-2 relative">
+            <input
+              type="text"
+              class="search-input px-4 py-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 hide-placeholder"
+              placeholder="Search for a movie"
+            />
+            <button
+              class="search-button px-4 py-2 bg-[#FEDF39] text-black hover:bg-[#C6AD28] transition-all duration-300"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div
+          id="dropdown-container"
+          class="absolute h-[600px] overflow-y-scroll top-20 right-52 mt-2 bg-white text-black shadow-lg w-[600px] hidden"
+        >
+          <span class="block p- text-left p-6 text-gray-400"
+            >Select the movie you want to add 👇</span
+          >
+          <div id="favorite-movies-list" class="p-2"></div>
+        </div>
+      </div>
+    </header>
+    <!-- End Felipes Part (Nav Bar) -->
+
+    <!-- End-->
+
+    <main>
+      <section class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">
+          List of movies you want to watch:
+        </h1>
+        <div
+          id="favorite-movies"
+          class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        ></div>
+      </section>
+    </main>
+
+    <!-- Start Sebastian Part (Footer) -->
+    <footer class="bg-black p-4 text-white">
+      <div class="flex flex-col items-center gap-2">
+        <a href="index.html" class="flex justify-center items-center"><span
+            class="inline-block text-[24px] text-white text-whit border px-4 py-2"
+            >The Movie Club</span></a>
+        <p>© 2024 The Movie club</p>
+      </div>
+          <div class="flex flex-col items-center">
+            <p>Webpage by:
+              <div class="flex justify-center gap-6">
+                <a href="https://github.com/AmarbayarBold" target="_blank" class="font-semibold main-nav-link hover:scale-110">Amarbayar Bold</a>
+                <a href="https://github.com/felborja" target="_blank" class="font-semibold main-nav-link hover:scale-110">Felipe Borja</a>
+                <a href="https://github.com/SebSchoeneberger" target="_blank" class="font-semibold hover:scale-110 main-nav-link">Sebastian Schoeneberger</a>
+              </div>
+            </p>
+          </div>
+    </footer>
+    <!-- Start Sebastian Part (Footer) -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
